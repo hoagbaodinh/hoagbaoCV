@@ -30,7 +30,7 @@
             </li>
             <li class="nav__item">
               <a href="#profile" class="nav__link">
-                <i class="bx bx-user nav__icon"></i>Profile
+                <i class="bx bx-user nav__icon"></i>About me
               </a>
             </li>
             <li class="nav__item">
@@ -51,11 +51,6 @@
             <li class="nav__item">
               <a href="#certificates" class="nav__link">
                 <i class="bx bx-award nav__icon"></i>Certificates
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#references" class="nav__link">
-                <i class="bx bx-link-external nav__icon"></i>References
               </a>
             </li>
           </ul>
@@ -116,33 +111,132 @@
             ></i>
           </section>
 
-          <!--========== SOCIAL ==========-->
-          <section class="social section">
-            <h2 class="section-title">social</h2>
+          <!--========== ABOUT ME ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">about me</h2>
 
-            <div class="social__container bd-grid">
-              <a
-                href="https://www.facebook.com/hbao.dinh/"
-                target="_blank"
-                class="social__link"
-              >
-                <i class="bx bxl-facebook social__icon"></i> @hbao.dinh
-              </a>
-              <a
-                href="https://www.instagram.com/hbao.d/"
-                target="_blank"
-                class="social__link"
-              >
-                <i class="bx bxl-instagram social__icon"></i> @hbao.d
-              </a>
+            <p class="profile__description">
+              I'm Hoang Bao, Front-end Developer. <br />
+              On the way to becoming a professional Full-stack Developer,
+              besides cultivating myself with new knowledge, I look forward to
+              have the opportunity to apply what I have learned to real
+              projects.
+            </p>
+          </section>
+
+          <!--========== SKILLS  ==========-->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">skills</h2>
+
+            <div class="skills__content">
+              <ul class="skills__data">
+                <li class="skill__name">
+                  <span class="skill__circle"></span>
+                  <span class="skill__title">FRONTEND:</span>
+                  <p class="skill__description">HTML, CSS , Javascript</p>
+                  <p class="skill__description">JQuery, Bootstrap, ReactJS</p>
+                </li>
+                <li class="skill__name">
+                  <span class="skill__circle"></span>
+                  <span class="skill__title">BACKEND:</span>
+                  <p class="skill__description">Javascript</p>
+                  <p class="skill__description">NodeJS (Express)</p>
+                </li>
+                <li class="skill__name">
+                  <span class="skill__circle"></span>
+                  <span class="skill__title">DESIGN:</span>
+                  <p class="skill__description">Figma, Photoshop</p>
+                </li>
+                <li class="skill__name">
+                  <span class="skill__circle"></span>
+                  <span class="skill__title">ENGLISH:</span>
+                  <p class="skill__description">
+                    Able to read documents and communicate in English
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data">
+                  <h3 class="experience__title">BARISTA & MANAGER</h3>
+
+                  <span class="experience__company">From 2018-2022</span>
+                  <p class="experience__description">
+                    I have 3+ years of experience working in the restaurant and
+                    coffee shop as a barista and manager
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data">
+                  <h3 class="experience__title">FRONTEND DEVELOPER</h3>
+
+                  <span class="experience__company"
+                    >2023 | Personal Project</span
+                  >
+                  <div class="experience__description">
+                    <p>
+                      <b> E-Commerce Website: </b>
+                      <i>Build a Handmade Gift Box website</i>
+                    </p>
+                    <ul>
+                      <li>
+                        Github link:
+                        <a
+                          href="https://github.com/hoagbaodinh/282-DoAnWeb-DinhHoangBao"
+                          target="_blank"
+                          >https://github.com/hoagbaodinh/282-DoAnWeb-DinhHoangBao</a
+                        >
+                      </li>
+                      <li>
+                        Demo Website:
+                        <a href="https://ohkraft.netlify.app/ " target="_blank"
+                          >https://ohkraft.netlify.app/</a
+                        >
+                      </li>
+                      <li>Number of member: 1 (personal project)</li>
+                      <li>Technology used: HTML, CSS, JavaScript, JQuery</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
-          <!--========== PROFILE ==========-->
-          <section class="profile section" id="profile">
-            <h2 class="section-title">profile</h2>
+          <!--========== CERTIFICATES ==========-->
+          <section class="certificate section" id="certificates">
+            <h2 class="section-title">certificate</h2>
 
-            <p class="profile__description">I'm Hoang Bao, I</p>
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  WEBSITE DESIGN ENGINEER (2023)
+                </h3>
+                <p class="certificate__description">
+                  Informatics Center - University of Science
+                </p>
+              </div>
+            </div>
           </section>
 
           <!--========== EDUCATION ==========-->
@@ -189,121 +283,6 @@
                   <span class="education__studies">Self Study</span>
                   <span class="education__year">2023-now</span>
                 </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <div class="resume__right">
-          <!--========== EXPERIENCE ==========-->
-          <section class="experience section" id="experience">
-            <h2 class="section-title">experience</h2>
-
-            <div class="experience__container bd-grid">
-              <div class="experience__content">
-                <div class="experience__time">
-                  <span class="experience__rounder"></span>
-                  <span class="experience__line"></span>
-                </div>
-
-                <div class="experience__data">
-                  <h3 class="experience__title">BARISTA & MANAGER</h3>
-
-                  <span class="experience__company">From 2018-2022</span>
-                  <p class="experience__description">
-                    I have 3+ years of experience working in the restaurant and
-                    coffee shop as a barista and manager
-                  </p>
-                </div>
-              </div>
-
-              <div class="experience__content">
-                <div class="experience__time">
-                  <span class="experience__rounder"></span>
-                  <span class="experience__line"></span>
-                </div>
-
-                <div class="experience__data">
-                  <h3 class="experience__title">FRONTEND DEVELOPER</h3>
-
-                  <span class="experience__company"
-                    >2023 | Personal Project</span
-                  >
-                  <p class="experience__description"></p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!--========== CERTIFICATES ==========-->
-          <section class="certificate section" id="certificates">
-            <h2 class="section-title">certificate</h2>
-
-            <div class="certificate__container bd-grid">
-              <div class="certificate__content">
-                <h3 class="certificate__title">
-                  WEBSITE DESIGN ENGINEER (2023)
-                </h3>
-                <p class="certificate__description">
-                  Informatics Center - University of Science
-                </p>
-              </div>
-            </div>
-          </section>
-          <!--========== SKILLS  ==========-->
-          <section class="skills section" id="skills">
-            <h2 class="section-title">skills</h2>
-
-            <div class="skills__content">
-              <ul class="skills__data">
-                <li class="skill__name">
-                  <span class="skill__circle"></span>
-                  <span class="skill__title">FRONTEND:</span>
-                  <p class="skill__description">HTML, CSS , Javascript</p>
-                  <p class="skill__description">JQuery, Bootstrap, ReactJS</p>
-                </li>
-                <li class="skill__name">
-                  <span class="skill__circle"></span>
-                  <span class="skill__title">BACKEND:</span>
-                  <p class="skill__description">Javascript</p>
-                  <p class="skill__description">NodeJS (Express)</p>
-                </li>
-                <li class="skill__name">
-                  <span class="skill__circle"></span>
-                  <span class="skill__title">DESIGN:</span>
-                  <p class="skill__description">Figma, Photoshop</p>
-                </li>
-                <li class="skill__name">
-                  <span class="skill__circle"></span>
-                  <span class="skill__title">ENGLISH:</span>
-                  <p class="skill__description">
-                    Able to read documents and communicate in English
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <!--========== INTERESTS ==========-->
-          <section class="interests section">
-            <h2 class="section-title">interests</h2>
-
-            <div class="interests__container bd-grid">
-              <div class="interests__content">
-                <i class="bx bx-headphone interests__icon"></i>
-                <span class="interests__name">Music</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bx-book interests__icon"></i>
-                <span class="interests__name">Reading</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bxs-plane-alt interests__icon"></i>
-                <span class="interests__name">Travel</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bx-dumbbell interests__icon"></i>
-                <span class="interests__name">Fitting</span>
               </div>
             </div>
           </section>

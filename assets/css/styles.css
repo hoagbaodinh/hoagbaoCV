@@ -194,6 +194,7 @@ h2,
 h3 {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  letter-spacing: 0.02rem;
 }
 
 ul,
@@ -222,10 +223,12 @@ img {
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
   text-transform: uppercase;
-  letter-spacing: 0.35rem;
-
+  letter-spacing: 0.15rem;
+  border: 0.5px solid var(--title-color);
   text-align: center;
   margin-bottom: var(--mb-3);
+  display: inline-block;
+  padding: 5px 20px;
 }
 /*========== LAYOUT ==========*/
 .bd-container {
@@ -379,32 +382,11 @@ img {
   background-color: var(--text-color);
   color: var(--container-color);
 }
-/*========== SOCIAL ==========*/
-.social__container {
-  grid-template-columns: max-content;
-  gap: 1rem;
-}
 
-.social__link {
-  display: inline-flex;
-  align-items: center;
-  font-size: var(--small-font-size);
-  color: var(--text-color);
-}
-
-.social__link:hover {
-  color: var(--title-color);
-}
-
-.social__icon {
-  font-size: 1.2rem;
-  margin-right: 0.25rem;
-}
-/*========== PROFILE ==========*/
-.profile__description {
-  text-align: center;
-}
 /*========== EDUCATION AND EXPERIENCE ==========*/
+.experience {
+  margin-bottom: 20px;
+}
 .education__content,
 .experience__content {
   display: flex;
@@ -436,6 +418,8 @@ img {
 
 .education__data,
 .experience__data {
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
@@ -453,6 +437,21 @@ img {
 .education__year,
 .experience__description {
   font-size: var(--smaller-font-size);
+}
+
+.experience__description li {
+  list-style: disc;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.experience__description a {
+  color: inherit;
+  transition: ease-in 0.3s;
+  border-bottom: 0.5px solid transparent;
+  font-style: italic;
+}
+.experience__description a:hover {
+  border-bottom: 0.5px solid var(--title-color);
 }
 /*========== SKILLS AND LANGUAGES ==========*/
 
@@ -484,22 +483,6 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-/*========== INTERESTS ==========*/
-.interests__container {
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: var(--mb-2);
-}
-
-.interests__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.interests__icon {
-  font-size: 1.5rem;
-  color: var(--text-color-light);
-  margin-bottom: 0.25rem;
-}
 /* Scroll top */
 .scrolltop {
   position: fixed;
@@ -593,5 +576,16 @@ img {
   .interests__container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
+  }
+}
+@media screen and (max-width: 967px) {
+  .profile,
+  .experience,
+  .education {
+    background-color: var(--container-color-alt);
+  }
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
