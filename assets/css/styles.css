@@ -356,10 +356,13 @@ img {
   gap: 1rem;
 }
 
-.home__information {
+.home__information,
+.home__envelope,
+.home__phone {
   display: flex;
   align-items: center;
   font-size: var(--small-font-size);
+  gap: 0.25rem;
 }
 
 .home__icon {
@@ -445,14 +448,12 @@ img {
   margin-top: 5px;
 }
 .experience__description a {
-  color: inherit;
-  transition: ease-in 0.3s;
-  border-bottom: 0.5px solid transparent;
-  font-style: italic;
+  color: var(--title-color);
 }
 .experience__description a:hover {
-  border-bottom: 0.5px solid var(--title-color);
+  text-decoration: underline;
 }
+
 /*========== SKILLS AND LANGUAGES ==========*/
 
 .skill__name {
