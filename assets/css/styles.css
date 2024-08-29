@@ -70,12 +70,12 @@ body.dark-theme {
 }
 /*========== Font size variables to scale cv ==========*/
 body.scale-cv {
-  --h1-font-size: 0.938rem;
-  --h2-font-size: 0.938rem;
-  --h3-font-size: 0.875rem;
-  --normal-font-size: 0.813rem;
-  --small-font-size: 0.75rem;
-  --smaller-font-size: 0.688ssrem;
+  --h1-font-size: 1.25rem;
+  --h2-font-size: 1rem;
+  --h3-font-size: 0.8rem;
+  --normal-font-size: 0.7rem;
+  --small-font-size: 0.7rem;
+  --smaller-font-size: 0.6rem;
 }
 /*========== Generate PDF button ==========*/
 .generate-pdf {
@@ -102,16 +102,16 @@ body.scale-cv {
 }
 
 .scale-cv .section {
-  padding: 1.5rem 0 0.8rem;
+  padding: 1rem 0;
 }
 
 .scale-cv .section-title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .scale-cv .resume__left,
 .scale-cv .resume__right {
-  padding: 0 1rem;
+  padding: 0 0.75rem;
 }
 
 .scale-cv .home__img {
@@ -215,7 +215,7 @@ img {
 
 /*========== CLASS CSS ==========*/
 .section {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .section-title {
@@ -430,7 +430,7 @@ img {
 .experience__line {
   display: block;
   width: 2px;
-  height: 110%;
+  height: 100%;
   background-color: var(--text-color-light);
   transform: translateX(7px);
 }
@@ -477,7 +477,7 @@ img {
 /*========== SKILLS AND LANGUAGES ==========*/
 
 .skill__name {
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
 }
 .skill__description {
   padding-left: 1rem;
